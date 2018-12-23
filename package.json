@@ -32,7 +32,7 @@
     "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack",
     "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack",
     "prepare": "npm run clean && npm run lint && npm run test && npm run build",
-    "prepublishOnly": "safe-publish-latest && npm run prepare"
+    "prepublishOnly": "safe-publish-latest"
   },
   "dependencies": {},
   "devDependencies": {
