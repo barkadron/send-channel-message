@@ -91,7 +91,7 @@ export default {
         return sendMessageToIframe(message);
     },
     // ...
-}
+};
 ```
 
 And then use it for simple send requests and receive responses in API-like style:
