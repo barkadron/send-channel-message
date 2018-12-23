@@ -1,5 +1,6 @@
 # send-channel-message
 
+[![Build status][travis-image]][travis-url]
 [![License][license-image]][license-url]
 
 This package provide simple function that allow to pass messages to separate script in different browsing context and get back result data as a Promise using _Channel Messaging API_.
@@ -142,6 +143,8 @@ npm test
 
 MIT
 
+[travis-image]: https://img.shields.io/travis/barkadron/send-channel-message.svg?style=flat-square
+[travis-url]: https://travis-ci.org/barkadron/send-channel-message
 [license-image]: http://img.shields.io/npm/l/safe-publish-latest.svg
 [license-url]: LICENSE
 [channel-messaging-api-url]: https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API
