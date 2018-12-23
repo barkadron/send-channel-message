@@ -12,8 +12,8 @@
     "Port",
     "Promise"
   ],
-  "homepage": "",
-  "repository": "",
+  "homepage": "https://github.com/barkadron/send-channel-message#readme",
+  "repository": "https://github.com/barkadron/send-channel-message.git",
   "browser": "lib/index.js",
   "module": "es/index.js",
   "files": [
