@@ -1,6 +1,6 @@
 {
   "name": "send-channel-message",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple function that allow to pass messages to separate script in different browsing context and get back result data as a Promise.",
   "license": "MIT",
   "author": "Andrey Barkalov <barkadron@mail.ru>",
