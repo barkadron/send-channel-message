@@ -1,7 +1,20 @@
-# send-channel-message
+# send-channel-message [![Version Badge][version-image]][version-url]
 
-[![Build status][travis-image]][travis-url]
-[![License][license-image]][license-url]
+[![build status][travis-image]][travis-url]
+[![test coverage][coveralls-image]][coveralls-url]
+[![license][license-image]][license-url]
+
+[![known vulnerabilities][vulnerabilities-image]][vulnerabilities-url]
+[![dependency status][dependency-image]][dependency-url]
+[![dev-dependency status][dev-dependency-image]][dev-dependency-url]
+
+[![npm version][npm-image]][npm-url]
+![minified size][min-zip-size-url]
+[![downloads][downloads-image]][downloads-url]
+
+<!--
+[![npm badge][npm-badge-url]][version-url]
+-->
 
 This package provide simple function that allow to pass messages to separate script in different browsing context and get back result data as a Promise using _Channel Messaging API_.
 
@@ -143,10 +156,39 @@ npm test
 
 MIT
 
-[travis-image]: https://img.shields.io/travis/barkadron/send-channel-message.svg?style=flat-square
+[version-url]: https://npmjs.org/package/send-channel-message
+[version-image]: http://versionbadg.es/barkadron/send-channel-message.svg
+
+[dependency-image]: https://david-dm.org/barkadron/send-channel-message.svg
+[dependency-url]: https://david-dm.org/barkadron/send-channel-message
+
+[dev-dependency-image]: https://david-dm.org/barkadron/send-channel-message/dev-status.svg
+[dev-dependency-url]: https://david-dm.org/barkadron/send-channel-message#info=devDependencies
+
+[min-zip-size-url]: https://img.shields.io/bundlephobia/min/send-channel-message.svg
+
+[npm-image]: https://img.shields.io/npm/v/send-channel-message.svg
+[npm-url]: https://npmjs.org/package/send-channel-message
+
+[downloads-image]: http://img.shields.io/npm/dm/send-channel-message.svg
+[downloads-url]: http://npm-stat.com/charts.html?package=send-channel-message
+
+[travis-image]: https://img.shields.io/travis/barkadron/send-channel-message.svg
 [travis-url]: https://travis-ci.org/barkadron/send-channel-message
-[license-image]: http://img.shields.io/npm/l/safe-publish-latest.svg
+
+[coveralls-image]: https://coveralls.io/repos/github/barkadron/send-channel-message/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/barkadron/send-channel-message?branch=master
+
+[vulnerabilities-image]: https://snyk.io/test/github/barkadron/send-channel-message/badge.svg
+[vulnerabilities-url]: https://snyk.io/test/github/barkadron/send-channel-message
+
+[license-image]: http://img.shields.io/npm/l/send-channel-message.svg
 [license-url]: LICENSE
+
+<!--
+[npm-badge-url]: https://nodei.co/npm/send-channel-message.png?downloads=true&downloadRank=true&stars=true
+-->
+
 [channel-messaging-api-url]: https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API
 [post-message-syntax-url]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage#Syntax
 [message-event-data-url]: https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent/data
