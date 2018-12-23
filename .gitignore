@@ -1,4 +1,8 @@
 node_modules
+.idea
+.vscode
+.nyc_output
+.coveralls.yml
 coverage
 dist
 es
