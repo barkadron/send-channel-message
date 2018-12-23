@@ -2,13 +2,13 @@
 
 [![License][license-image]][license-url]
 
-This package provide simple function `sendChannelMessage` that allow to pass messages to separate script in different browsing context and get back result data as a Promise using `Channel Messaging API`.
+This package provide simple function that allow to pass messages to separate script in different browsing context and get back result data as a Promise using _Channel Messaging API_.
 
 ## Motivation
 
-If You just want to communicate with script in other window/iframe/worker, You can use postMessage function and onMessage event handler.
+If you just want to communicate with script in other window/iframe/worker, you can use postMessage function and onMessage event handler.
 
-But if You want to communicate in Promise style, so thats a problem. And [Channel Messaging API][channel-messaging-api-url] solves this problem using two-way channels with a port at each end.
+But if you want to communicate in Promise style, so thats a problem. And [Channel Messaging API][channel-messaging-api-url] solves this problem using two-way channels with a port at each end.
 
 ## Installation
 
@@ -18,21 +18,21 @@ Install the package to your project:
 npm install --save send-channel-message
 ```
 
-And then You can import the function:
+And then you can import the function:
 
 * If you used ES modules:
     ``` js
-    import sendChannelMessage from 'send-channel-message'
+    import sendChannelMessage from 'send-channel-message';
     ```
 
-* If you use it in CommonJS environment (don’t forget to add `.default` to your import):
+* If you used it in CommonJS environment (don’t forget to add `.default` to your import):
     ``` js
-    var sendChannelMessage = require('send-channel-message').default
+    var sendChannelMessage = require('send-channel-message').default;
     ```
 
-* Additionally it's also support a [UMD build](/dist/send-channel-message.min.js):
+* Additionally it's also support a [UMD build][umd-build-min-url]:
     ```js
-    var sendChannelMessage = window.sendChannelMessage.default
+    var sendChannelMessage = window.sendChannelMessage.default;
     ```
 
 ## Usage
@@ -55,15 +55,15 @@ promise.then( (data) => {
 
 * **message** - data to be sent to the other script.
 
-* **target** - a reference to the window that will receive the `message`.
+* **target** - a reference to the window/worker that will receive the `message`.
 
-* **origin** - Specifies what the origin of `target` must be for the event to be dispatched  (default = "*").
+* **origin** - specifies what the origin of `target` must be for the event to be dispatched  (default = "*").
 
 *See [postMessage syntax][post-message-syntax-url] description.
 
 ### Outputs
 
-`data` property of the `MessageEvent` interface
+`data` property of the `MessageEvent` interface.
 
 *See [MessageEvent data][message-event-data-url] description.
 
@@ -80,7 +80,7 @@ const target = document.getElementById('someIframe').contentWindow;
 
 function sendMessageToIframe(message) {
     return sendChannelMessage(message, target);
-};
+}
 
 export default {
     initialize: (initData) => {
@@ -126,6 +126,18 @@ window.addEventListener('message', evt => {
 });
 ```
 
+## Tests
+
+Simply clone the repo and run
+
+``` sh
+npm install
+```
+
+``` sh
+npm test
+```
+
 ## License
 
 MIT
@@ -135,3 +147,4 @@ MIT
 [channel-messaging-api-url]: https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API
 [post-message-syntax-url]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage#Syntax
 [message-event-data-url]: https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent/data
+[umd-build-min-url]: /dist/send-channel-message.min.js
