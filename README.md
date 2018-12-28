@@ -192,4 +192,5 @@ MIT
 [channel-messaging-api-url]: https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API
 [post-message-syntax-url]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage#Syntax
 [message-event-data-url]: https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent/data
-[umd-build-min-url]: /dist/send-channel-message.min.js
+
+[umd-build-min-url]: https://unpkg.com/send-channel-message/dist/send-channel-message.min.js
