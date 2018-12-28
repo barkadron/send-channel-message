@@ -1,20 +1,19 @@
-# send-channel-message [![Version Badge][version-image]][version-url]
+# send-channel-message
 
+<!-- # send-channel-message [![Version Badge][version-image]][version-url] -->
+
+[![npm version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![test coverage][coveralls-image]][coveralls-url]
 [![license][license-image]][license-url]
+![minified size][min-zip-size-url]
+[![downloads][downloads-image]][downloads-url]
 
 [![known vulnerabilities][vulnerabilities-image]][vulnerabilities-url]
 [![dependency status][dependency-image]][dependency-url]
 [![dev-dependency status][dev-dependency-image]][dev-dependency-url]
 
-[![npm version][npm-image]][npm-url]
-![minified size][min-zip-size-url]
-[![downloads][downloads-image]][downloads-url]
-
-<!--
-[![npm badge][npm-badge-url]][version-url]
--->
+<!-- [![npm badge][npm-badge-url]][version-url] -->
 
 This package provide simple function that allow to pass messages to separate script in different browsing context and get back result data as a Promise using _Channel Messaging API_.
 
