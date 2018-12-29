@@ -129,11 +129,12 @@ The iFrame script will look something like this:
 ``` js
 /* iframe.js */
 
-window.addEventListener('message', evt => {
-    if (evt.data && evt.ports && evt.ports[0]) {
-        if (evt.data.type === 'INIT') {
-            const { initData } = evt.data;
-            ports[0].postMessage('Init success!', '*');
+window.addEventListener('message', ({ data, ports }) => {
+    if (data && ports && ports[0]) {
+        if (data.type === 'INIT') {
+            console.log('Received init request:', data.initData);
+            ports[0].postMessage('Init success!');
+            ports[0].close();
         }
     }
 });
